@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>数据爬取</title>
+</head>
+<body>
+<form name="form01" action="127.0.0.1:8080/sentiment/web" method="post">
+    网址:<input type="text" name="url" maxlength="20" id="url"><br>
+    专题(分类):<input name="syslid" type="radio" value="" checked>
+    正面&nbsp;
+    <input name="syslid" type="radio" value="负面" checked>
+    负面<br>
+    褒贬： <input name="sentimen" type="radio" value="正面" checked>
+    正面&nbsp;
+    <input name="sentimen" type="radio" value="中性" checked>
+    中性&nbsp;
+    <input name="sentimen" type="radio" value="负面" checked>
+    负面<br>
+    是否是垃圾文：<input name="category" type="radio" value="true" checked>
+    是&nbsp;
+    <input name="category" type="radio" value="false" checked>
+    否<br>
+    <input name="submit" type="button" value="保存">
+    <input name="reset" type="reset" value="重新填写">
+</form>
+</body>
+</html>
